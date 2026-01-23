@@ -7,16 +7,14 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  background: var(--bg);
 }
 
 /* NAV */
@@ -34,7 +32,6 @@ body {
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -56,9 +53,9 @@ nav a:hover {
 /* HERO */
 .hero {
   max-width: 900px;
-  margin: 120px auto;
-  padding: 0 24px;
+  margin: 140px auto;
   text-align: center;
+  padding: 0 24px;
 }
 
 .hero h1 {
@@ -68,25 +65,29 @@ nav a:hover {
 }
 
 .hero p {
-  margin-top: 20px;
   font-size: 18px;
   color: var(--muted);
+  margin-top: 20px;
 }
 
 .cta {
   display: inline-block;
   margin-top: 32px;
-  padding: 12px 28px;
+  padding: 12px 30px;
+  border-radius: 999px;
   background: var(--accent);
   color: white;
   text-decoration: none;
-  border-radius: 999px;
   font-weight: 500;
+}
+
+.cta.dark {
+  background: #111;
 }
 
 /* SECTIONS */
 .section {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 120px auto;
   padding: 0 24px;
   text-align: center;
@@ -94,13 +95,7 @@ nav a:hover {
 
 .section h2 {
   font-size: 36px;
-  margin-bottom: 16px;
-}
-
-.section p {
-  color: var(--muted);
-  max-width: 700px;
-  margin: auto;
+  margin-bottom: 40px;
 }
 
 .gray {
@@ -110,24 +105,41 @@ nav a:hover {
 
 /* GRID */
 .grid {
-  margin-top: 48px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
 }
 
 .card {
   background: white;
-  padding: 28px;
-  border-radius: 16px;
+  padding: 32px;
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* PROCESS */
+.steps {
+  max-width: 600px;
+  margin: auto;
+}
+
+.step {
+  background: white;
+  margin: 16px 0;
+  padding: 20px;
+  border-radius: 14px;
   font-weight: 500;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
 }
 
 /* FOOTER */
 footer {
-  padding: 48px 24px;
   text-align: center;
+  padding: 48px 24px;
   color: var(--muted);
   font-size: 14px;
 }
